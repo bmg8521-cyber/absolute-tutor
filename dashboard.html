@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard — Absolute Tutor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+  <a class="skip-link" href="#main">Skip to content</a>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav role="navigation" aria-label="Primary navigation">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+    </div>
+  <main id="main" class="container" role="main">
+    
+    <h1>Dashboard</h1>
+    <h2>Your Learning Progress</h2>
+
+    <section class="card">
+      <h3>Overall Progress</h3>
+      <div class="progress-wrap">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+      <p id="progress-text">0% complete</p>
+    </section>
+
+    <section class="card">
+      <h3>Completed Activities</h3>
+      <ul id="completed-list"></ul>
+    </section>
+
+    <section class="card small">
+      <h3>Quick Actions</h3>
+      <button id="reset-btn" class="btn ghost">Reset progress</button>
+    </section>
+  </main>
+
+  <script src="assets/js/dashboard.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

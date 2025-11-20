@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-label="absolute tutor logo">
+  <title>absolute tutor</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+    .txt{font-family: 'Changa One', system-ui, sans-serif; font-size:48px; fill:#000}
+    .bars{fill:#000}
+  </style>
+
+  <!-- 'absolute' text -->
+  <text class="txt" x="16" y="78">absolute</text>
+
+  <!-- left vertical bar (thicker, straighter) -->
+  <rect class="bars" x="275" y="18" width="8" height="72" rx="1" />
+
+  <!-- 'tutor' text placed between the bars -->
+  <text class="txt" x="291" y="78">tutor</text>
+
+  <!-- right vertical bar -->
+  <rect class="bars" x="470" y="18" width="8" height="72" rx="1" />
+</svg>

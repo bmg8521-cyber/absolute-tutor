@@ -1,0 +1,27 @@
+Beginner Calculus Notes
+
+1. Limits
+- Definition: The limit of f(x) as x approaches a is L if f(x) gets arbitrarily close to L when x is close to a.
+- Notation: lim_{x->a} f(x) = L
+- Example techniques: direct substitution, factor & cancel, rationalize, squeeze theorem.
+
+2. Derivatives (Intro)
+- Definition: The derivative f'(x) is the instantaneous rate of change: f'(x)=lim_{h->0} (f(x+h)-f(x))/h
+- Basic rules: power rule, constant rule, sum rule, product rule, quotient rule, chain rule.
+
+3. Integrals (Intro)
+- Indefinite integral: ∫ f(x) dx = F(x) + C where F'(x)=f(x)
+- Definite integral: area under curve from a to b: ∫_a^b f(x) dx
+- Fundamental Theorem of Calculus links derivatives and integrals.
+
+4. Common Functions
+- Power functions: x^n
+- Exponential: e^x
+- Logarithmic: ln(x)
+- Trigonometric: sin(x), cos(x), tan(x)
+
+5. Quick tips
+- Practice limits first — many derivative/integral problems build on limit manipulation.
+- Keep derivative rules handy; memorize the derivatives of basic trig, exp, and log functions.
+
+This is a simple text-based notes file. Replace with a PDF file if you want a formatted cheat sheet (I can create a basic PDF for you if you want).

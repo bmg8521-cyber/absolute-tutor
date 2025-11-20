@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resources — Absolute Tutor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><span class="brand">absolute</span> <span class="abs">tutor</span></h1>
+      <nav role="navigation" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="container" role="main">
+    <h1>Resources</h1>
+    <h2>Lessons, Videos, Quizzes & Downloads</h2>
+
+    <section class="card">
+      <h3>Lesson: Introduction to Calculus</h3>
+      <p>A short interactive lesson designed for peer study groups.</p>
+      <button class="btn" data-lesson="Intro to Calculus">Mark lesson complete</button>
+    </section>
+
+    <section class="card">
+      <h3>Video: Calculus — Organic Chemistry Tutor</h3>
+      <div class="video-wrap video-card" data-video-id="GiCojsAWRj0" aria-label="Calculus video thumbnail">
+        <!-- Lazy-load thumbnail: click to replace with iframe -->
+      </div>
+      <p>Source: <a href="https://www.youtube.com/watch?v=GiCojsAWRj0&list=PL0o_zxa4K1BWYThyV4T2Allw6zY0jEumv&index=1" target="_blank" rel="noopener noreferrer">Organic Chemistry Tutor — Calculus (YouTube)</a></p>
+    </section>
+
+    <section class="card">
+      <h3>Quick Quiz:</h3>
+      <div id="quiz">
+        <p>Which of these grows fastest as n increases?</p>
+        <label><input type="radio" name="q1" value="1"> n</label><br>
+        <label><input type="radio" name="q1" value="2"> n log n</label><br>
+        <label><input type="radio" name="q1" value="3"> n^2</label><br>
+        <label><input type="radio" name="q1" value="4"> log n</label><br>
+        <button id="submit-quiz" class="btn">Submit Quiz</button>
+        <p id="quiz-result" class="muted"></p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Downloads</h3>
+      <p><a href="assets/resources/calculus_notes.pdf" download>Download: Beginner Calculus Notes (PDF)</a></p>
+    </section>
+  </main>
+
+  <script src="assets/js/resources.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
