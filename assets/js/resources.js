@@ -4,7 +4,7 @@ class ResourcesManager {
     this.currentSubject = 'math';
     this.quizAnswers = {
       math: 3, // n² grows fastest
-      science: 3, // Chemical energy is stored in chemical bonds
+      science: 3, // Mitochondria produces energy (ATP) in cells
       cs: 3, // Stack follows LIFO principle
       languages: 2 // Spaced repetition is most effective
     };
