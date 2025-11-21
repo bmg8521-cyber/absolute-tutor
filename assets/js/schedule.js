@@ -31,7 +31,7 @@ class SessionDatabase {
         date: this.getNextWeekday(2), // Tuesday
         time: '19:00',
         duration: 90,
-        tutorName: 'Team Alpha',
+        tutorName: 'Rebecca',
         description: 'Review arrays, linked lists, and trees',
         maxParticipants: 6,
         participants: ['demo_user_3'],
