@@ -296,8 +296,8 @@ button, a.btn {padding:12px 16px}
   }
   
   .site-title {
-    font-size: 1rem;
-    gap: 6px;
+    font-size: 1.8rem;
+    gap: 8px;
   }
   
   .site-header .tag {
@@ -343,6 +343,10 @@ button, a.btn {padding:12px 16px}
 @media (max-width:600px){
   .container{padding:12px}
   .site-header nav{margin-top:8px}
+  
+  .site-title {
+    font-size: 2rem;
+  }
   
   nav a {
     padding: 10px 16px;
@@ -677,7 +681,7 @@ h1, h2, h3, .site-title {
 
 .site-header .site-title {
   color: #000;
-  font-size: 1.2rem;
+  font-size: 2.5rem;
 }
 
 /* Schedule Page Enhancements */
