@@ -10,17 +10,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
   })
 })
 
+// Demo Progress Tracking - Resets on page reload for clean presentations
+let demoProgressItems = [];
+
 function saveProgressItem(title){
-  const key = 'rlc_completed';
-  const data = JSON.parse(localStorage.getItem(key) || '[]');
-  if(!data.includes(title)) data.push(title);
-  localStorage.setItem(key, JSON.stringify(data));
+  if(!demoProgressItems.includes(title)) {
+    demoProgressItems.push(title);
+  }
 }
 
 function getProgressItems(){
-  return JSON.parse(localStorage.getItem('rlc_completed') || '[]');
+  return demoProgressItems;
 }
 
 function clearProgress(){
-  localStorage.removeItem('rlc_completed');
+  demoProgressItems = [];
 }

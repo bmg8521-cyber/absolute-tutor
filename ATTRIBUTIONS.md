@@ -36,6 +36,13 @@ This document provides complete attribution for all external libraries, template
   - Usage: Educational reference material
   - License: Educational use
 
+### Design Elements
+- **Dashboard UI** - Clean card-based layout design
+  - Custom progress visualization and statistics
+  - Empty state handling with encouraging messaging
+  - Responsive grid layout for activity tracking
+  - Usage: Internal design implementation
+
 ## Python Libraries
 
 ### PDF Generation

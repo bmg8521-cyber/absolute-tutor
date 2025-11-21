@@ -22,39 +22,187 @@
   </header>
   <main id="main" class="container" role="main">
     <h1>Resources</h1>
-    <h2>Lessons, Videos, Quizzes & Downloads</h2>
+    <p>Choose a subject area to access lessons, videos, quizzes, and study materials.</p>
 
-    <section class="card">
-      <h3>Lesson: Introduction to Calculus</h3>
-      <p>A short interactive lesson designed for peer study groups.</p>
-      <button class="btn" data-lesson="Intro to Calculus">Mark lesson complete</button>
+    <!-- Subject Navigation -->
+    <section class="subject-tabs">
+      <button id="math-tab" class="subject-tab active" data-subject="math" type="button">
+        <span class="tab-icon">📐</span>
+        Math
+      </button>
+      <button id="science-tab" class="subject-tab" data-subject="science" type="button">
+        <span class="tab-icon">🧪</span>
+        Science
+      </button>
+      <button id="cs-tab" class="subject-tab" data-subject="cs" type="button">
+        <span class="tab-icon">💻</span>
+        Computer Science
+      </button>
+      <button id="languages-tab" class="subject-tab" data-subject="languages" type="button">
+        <span class="tab-icon">🗣️</span>
+        Languages
+      </button>
     </section>
 
-    <section class="card">
-      <h3>Video: Calculus — Organic Chemistry Tutor</h3>
-      <div class="video-wrap video-card" data-video-id="GiCojsAWRj0" aria-label="Calculus video thumbnail">
-        <!-- Lazy-load thumbnail: click to replace with iframe -->
-      </div>
-      <p>Source: <a href="https://www.youtube.com/watch?v=GiCojsAWRj0&list=PL0o_zxa4K1BWYThyV4T2Allw6zY0jEumv&index=1" target="_blank" rel="noopener noreferrer">Organic Chemistry Tutor — Calculus (YouTube)</a></p>
-    </section>
+    <!-- Math Subject Content -->
+    <div id="math-content" class="subject-content active">
+      <h2>Mathematics Resources</h2>
+      
+      <section class="card">
+        <h3>Lesson: Introduction to Calculus</h3>
+        <p>Master the fundamental concepts of calculus including limits, derivatives, and integrals. Perfect for beginners and those needing a refresher.</p>
+        <button class="btn" data-lesson="Math: Intro to Calculus">Mark lesson complete</button>
+      </section>
 
-    <section class="card">
-      <h3>Quick Quiz:</h3>
-      <div id="quiz">
-        <p>Which of these grows fastest as n increases?</p>
-        <label><input type="radio" name="q1" value="1"> n</label><br>
-        <label><input type="radio" name="q1" value="2"> n log n</label><br>
-        <label><input type="radio" name="q1" value="3"> n^2</label><br>
-        <label><input type="radio" name="q1" value="4"> log n</label><br>
-        <button id="submit-quiz" class="btn">Submit Quiz</button>
-        <p id="quiz-result" class="muted"></p>
-      </div>
-    </section>
+      <section class="card">
+        <h3>Video: Calculus Fundamentals</h3>
+        <div class="video-wrap video-card" data-video-id="GiCojsAWRj0" aria-label="Calculus fundamentals video thumbnail">
+          <!-- Lazy-load thumbnail: click to replace with iframe -->
+        </div>
+        <p><strong>Source:</strong> <a href="https://www.youtube.com/watch?v=GiCojsAWRj0" target="_blank" rel="noopener noreferrer">The Organic Chemistry Tutor — Calculus Introduction</a></p>
+      </section>
 
-    <section class="card">
-      <h3>Downloads</h3>
-      <p><a href="assets/resources/calculus_notes.pdf" download>Download: Beginner Calculus Notes (PDF)</a></p>
-    </section>
+      <section class="card">
+        <h3>Math Quiz: Growth Functions</h3>
+        <div id="math-quiz" class="quiz">
+          <p><strong>Question:</strong> Which function grows fastest as n approaches infinity?</p>
+          <label><input type="radio" name="mathQ1" value="1"> n</label><br>
+          <label><input type="radio" name="mathQ1" value="2"> n log n</label><br>
+          <label><input type="radio" name="mathQ1" value="3"> n²</label><br>
+          <label><input type="radio" name="mathQ1" value="4"> log n</label><br>
+          <button class="submit-quiz btn" data-quiz="math">Submit Answer</button>
+          <p class="quiz-result muted"></p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Math Study Materials</h3>
+        <ul class="download-list">
+          <li><a href="assets/resources/calculus_notes.pdf" download>📄 Calculus Reference Sheet (PDF)</a></li>
+          <li><a href="assets/resources/sample.pdf" download>📊 Math Formula Collection (PDF)</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Science Subject Content -->
+    <div id="science-content" class="subject-content">
+      <h2>Science Resources</h2>
+      
+      <section class="card">
+        <h3>Lesson: Physics Fundamentals</h3>
+        <p>Explore the core principles of physics including motion, forces, energy, and waves. Build a strong foundation for advanced topics.</p>
+        <button class="btn" data-lesson="Science: Physics Fundamentals">Mark lesson complete</button>
+      </section>
+
+      <section class="card">
+        <h3>Video: Physics Concepts</h3>
+        <div class="video-wrap video-card" data-video-id="kxMFJawiYhY" data-start-time="634" aria-label="Physics concepts video thumbnail">
+          <!-- Lazy-load thumbnail: click to replace with iframe -->
+        </div>
+        <p><strong>Source:</strong> <a href="https://www.youtube.com/watch?v=kxMFJawiYhY&t=634s" target="_blank" rel="noopener noreferrer">Physics Explained — Fundamental Concepts</a></p>
+      </section>
+
+      <section class="card">
+        <h3>Science Quiz: Energy Types</h3>
+        <div id="science-quiz" class="quiz">
+          <p><strong>Question:</strong> Which type of energy is stored in chemical bonds?</p>
+          <label><input type="radio" name="scienceQ1" value="1"> Kinetic energy</label><br>
+          <label><input type="radio" name="scienceQ1" value="2"> Potential energy</label><br>
+          <label><input type="radio" name="scienceQ1" value="3"> Chemical energy</label><br>
+          <label><input type="radio" name="scienceQ1" value="4"> Thermal energy</label><br>
+          <button class="submit-quiz btn" data-quiz="science">Submit Answer</button>
+          <p class="quiz-result muted"></p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Science Study Materials</h3>
+        <ul class="download-list">
+          <li><a href="assets/resources/sample.pdf" download>⚗️ Chemistry Periodic Table (PDF)</a></li>
+          <li><a href="assets/resources/calculus_notes.pdf" download>🔬 Physics Formula Guide (PDF)</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Computer Science Subject Content -->
+    <div id="cs-content" class="subject-content">
+      <h2>Computer Science Resources</h2>
+      
+      <section class="card">
+        <h3>Lesson: Programming Basics</h3>
+        <p>Learn fundamental programming concepts including variables, loops, functions, and data structures. Essential for any programming language.</p>
+        <button class="btn" data-lesson="CS: Programming Basics">Mark lesson complete</button>
+      </section>
+
+      <section class="card">
+        <h3>Video: Computer Science Fundamentals</h3>
+        <div class="video-wrap video-card" data-video-id="CTORY_L5jUI" aria-label="Computer science fundamentals video thumbnail">
+          <!-- Lazy-load thumbnail: click to replace with iframe -->
+        </div>
+        <p><strong>Source:</strong> <a href="https://www.youtube.com/watch?v=CTORY_L5jUI" target="_blank" rel="noopener noreferrer">CS Fundamentals — Core Concepts</a></p>
+      </section>
+
+      <section class="card">
+        <h3>CS Quiz: Data Structures</h3>
+        <div id="cs-quiz" class="quiz">
+          <p><strong>Question:</strong> Which data structure follows Last-In-First-Out (LIFO) principle?</p>
+          <label><input type="radio" name="csQ1" value="1"> Queue</label><br>
+          <label><input type="radio" name="csQ1" value="2"> Array</label><br>
+          <label><input type="radio" name="csQ1" value="3"> Stack</label><br>
+          <label><input type="radio" name="csQ1" value="4"> Linked List</label><br>
+          <button class="submit-quiz btn" data-quiz="cs">Submit Answer</button>
+          <p class="quiz-result muted"></p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>CS Study Materials</h3>
+        <ul class="download-list">
+          <li><a href="assets/resources/sample.pdf" download>💾 Algorithm Cheat Sheet (PDF)</a></li>
+          <li><a href="assets/resources/calculus_notes.pdf" download>🐍 Python Quick Reference (PDF)</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Languages Subject Content -->
+    <div id="languages-content" class="subject-content">
+      <h2>Language Learning Resources</h2>
+      
+      <section class="card">
+        <h3>Lesson: Language Fundamentals</h3>
+        <p>Discover effective strategies for language learning including vocabulary building, grammar basics, and pronunciation techniques.</p>
+        <button class="btn" data-lesson="Languages: Learning Fundamentals">Mark lesson complete</button>
+      </section>
+
+      <section class="card">
+        <h3>Video: Language Learning Tips</h3>
+        <div class="video-wrap video-card" data-video-id="2SIdIAMzHH0" aria-label="Language learning tips video thumbnail">
+          <!-- Lazy-load thumbnail: click to replace with iframe -->
+        </div>
+        <p><strong>Source:</strong> <a href="https://www.youtube.com/watch?v=2SIdIAMzHH0" target="_blank" rel="noopener noreferrer">Language Learning — Effective Techniques</a></p>
+      </section>
+
+      <section class="card">
+        <h3>Language Quiz: Learning Strategies</h3>
+        <div id="languages-quiz" class="quiz">
+          <p><strong>Question:</strong> Which technique is most effective for vocabulary retention?</p>
+          <label><input type="radio" name="languagesQ1" value="1"> Passive reading</label><br>
+          <label><input type="radio" name="languagesQ1" value="2"> Spaced repetition</label><br>
+          <label><input type="radio" name="languagesQ1" value="3"> One-time memorization</label><br>
+          <label><input type="radio" name="languagesQ1" value="4"> Translation only</label><br>
+          <button class="submit-quiz btn" data-quiz="languages">Submit Answer</button>
+          <p class="quiz-result muted"></p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Language Study Materials</h3>
+        <ul class="download-list">
+          <li><a href="assets/resources/sample.pdf" download>🗣️ Conversation Starters (PDF)</a></li>
+          <li><a href="assets/resources/calculus_notes.pdf" download>📚 Grammar Quick Guide (PDF)</a></li>
+        </ul>
+      </section>
+    </div>
   </main>
 
   <script src="assets/js/resources.js"></script>

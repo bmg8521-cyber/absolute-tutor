@@ -5,7 +5,7 @@ A modern student learning platform with interactive features, progress tracking,
 ## Quick Start
 1. Open `index.html` in your web browser to launch the application
 2. Navigate between pages using the top navigation menu
-3. All data is saved locally in your browser - no account required
+3. All interactions reset on page reload - perfect for clean demonstrations
 
 ## File Structure
 
@@ -13,7 +13,7 @@ A modern student learning platform with interactive features, progress tracking,
 - **`index.html`** - Landing page with site introduction and navigation links
 - **`schedule.html`** - Interactive schedule for browsing and registering for tutoring sessions
 - **`dashboard.html`** - Personal progress tracker with visual indicators and activity counters
-- **`resources.html`** - Educational content hub with videos, quizzes, and downloadable materials
+- **`resources.html`** - Educational content hub organized by subjects (Math, Science, Computer Science, Languages) with videos, quizzes, and materials
 
 ### Styling & Assets
 - **`assets/css/style.css`** - Complete stylesheet with Changa fonts, green theme, and responsive design
@@ -22,9 +22,9 @@ A modern student learning platform with interactive features, progress tracking,
 
 ### JavaScript Functionality
 - **`assets/js/app.js`** - Core navigation system and shared utility functions
-- **`assets/js/schedule.js`** - Session registration and localStorage management for schedule page
-- **`assets/js/dashboard.js`** - Progress tracking, activity counters, and reset functionality
-- **`assets/js/resources.js`** - Quiz interactions, video lazy-loading, and resource completion tracking
+- **`assets/js/schedule.js`** - Session database with in-memory storage for demo-friendly presentations
+- **`assets/js/dashboard.js`** - Progress tracking, activity counters, and reset functionality with empty state handling
+- **`assets/js/resources.js`** - Subject-based resource management, quiz interactions, video lazy-loading, and progress tracking
 
 ### Educational Content
 - **`assets/resources/sample.pdf`** - Original sample study material for download
@@ -40,14 +40,17 @@ A modern student learning platform with interactive features, progress tracking,
 - **`.nojekyll`** - Ensures proper GitHub Pages deployment without Jekyll processing
 
 ## Key Features
-- **Persistent Data**: All user progress and registrations saved with localStorage
+- **Demo-Friendly**: All data resets on page reload - perfect for presentations and clean testing
+- **Subject Organization**: Resources organized by Math, Science, Computer Science, and Languages with tab navigation
+- **Session Management**: Create, browse, and register for tutoring sessions with real-time availability tracking
+- **Progress Tracking**: Visual dashboard with activity counters, progress visualization, and completion statistics
 - **Accessibility**: Skip links, ARIA labels, keyboard navigation, and screen reader support
 - **Responsive Design**: Mobile-friendly layout that adapts to all screen sizes
-- **Educational Content**: Embedded Organic Chemistry Tutor videos with lazy-loading
-- **Interactive Elements**: Quizzes, progress bars, and session registration system
+- **Educational Content**: Embedded Organic Chemistry Tutor videos with lazy-loading and custom thumbnails
+- **Interactive Elements**: Subject-specific quizzes, progress bars, and session registration system
 
 ## Technical Requirements
-- Modern web browser with ES6+ and localStorage support
+- Modern web browser with ES6+ support
 - Internet connection for Google Fonts and embedded YouTube content
 
 ## Deployment
